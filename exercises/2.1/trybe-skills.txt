@@ -1,6 +1,0 @@
-Unix
-Bash
-Git
-Node.js
-HTML
-CSS
