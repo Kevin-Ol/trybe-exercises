@@ -15,4 +15,13 @@ ul li:nth-child(2n+4){
     text-transform: none;
 }
 
-/** ref: https://github.com/xieranmaya/blog/issues/12 /
+/* ref: https://github.com/xieranmaya/blog/issues/12 */
+
+h1, h2, h3 {
+    color:red
+}
+
+h1 em, h2 em, h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
