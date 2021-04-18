@@ -1,0 +1,18 @@
+ul li {
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+ul li:nth-child(2n),ul li:nth-child(2n) a {
+    color: green;
+}
+
+ul li:nth-child(1){
+    text-transform: none;
+}
+
+ul li:nth-child(2n+4){
+    text-transform: none;
+}
+
+/** ref: https://github.com/xieranmaya/blog/issues/12 /
