@@ -1,0 +1,68 @@
+ol li {
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+ol li:nth-child(2n) {
+    color: green;
+}
+
+ol li:nth-child(1){
+    text-transform: none;
+}
+
+ol li:nth-child(2n+4){
+    text-transform: none;
+}
+
+/* ref: https://github.com/xieranmaya/blog/issues/12 */
+
+h1, h2, h3 {
+    color:red
+}
+
+h1 em, h2 em, h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+ul:nth-of-type(1) li:nth-child(-n+3) {
+    color: blue;
+}
+
+ul:nth-of-type(1) li:nth-child(2), ul:nth-of-type(1) li:nth-child(3) {
+    background-color: pink;
+}
+
+ul:nth-of-type(2) li:nth-child(1):hover{
+    font-weight: bold;
+    background-color: orange;
+}
+
+ul:nth-of-type(2) li:nth-child(2):hover{
+    font-weight: bold;
+    background-color: green;
+}
+
+ul:nth-of-type(2) li:nth-child(3):hover{
+    font-weight: bold;
+    background-color: black;
+}
+
+ul:nth-of-type(2) li:nth-child(4):hover{
+    font-weight: bold;
+    background-color: yellow;
+}
+
+ul:nth-of-type(2) li:nth-child(5):hover{
+    font-weight: bold;
+    background-color: green;
+}
