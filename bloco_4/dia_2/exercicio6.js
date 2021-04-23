@@ -7,11 +7,11 @@ for (let number of numbers){
     if (number % 2 != 0) {
         impares += 1;
         valores.push(number)
-    }
-}
+    };
+};
 
 if (impares == 0) {
-    console.log('Nenhum valor ímpar encontrado')
+    console.log('Nenhum valor ímpar encontrado');
 } else {
-    console.log(valores)
-}
+    console.log(valores);
+};
