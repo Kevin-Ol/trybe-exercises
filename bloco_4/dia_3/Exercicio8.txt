@@ -1,0 +1,4 @@
+1 - Cria um array vazio;
+2 - Cria um loop que vai ser incrementado até o passo 25;
+3 - Para cada passo, adiciona o valor do passo ao array usando nomedoarray.push(indice);
+4 - Imprime o array;
