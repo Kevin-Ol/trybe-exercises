@@ -4,4 +4,6 @@
 4 - Para cada valor no array, adiciona esse valor na variável;
 5 - Cria uma nova variavel com valor 0;
 6 - A variável do passo 5 recebe a divisão do valor acumulado da variavel 2 pela quantidade de elementos do array;
-7 - Imprime variável 5;
+7 - Cria uma estrutura condiciona if com a condição da variavel 5 ser maior que 20;
+8 - Caso obedeça a condição: imprime maior valor que 20;
+9 - Caso não obedeça: imprime valor menor que 20;
