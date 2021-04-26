@@ -1,7 +1,7 @@
 1 - Adiciona o array;
 2 - Cria uma variavel que vai receber o primeiro valor do array;
 3 - Cria um loop que percorre o array;
-4 - Cria uma estrutura condiciona if que vai comparar cada elemento do array com a variavel;
+4 - Cria uma estrutura condiciona if que vai comparar cada elemento do array com a variavel, verificando se o valor do elemento é maior que o da variável;
 5 - Caso positivo, substitui o valor da variavel;
 6 - Caso negativo segue para o proximo elemento do array;
 7 - Imprime o valor final da variavel após terminado o loop;
