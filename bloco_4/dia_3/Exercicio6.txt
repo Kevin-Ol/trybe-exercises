@@ -1,0 +1,8 @@
+1 - Adiciona o array;
+2 - Cria uma variavel com valor 0 que vai receber a quantidade de números ímpares;
+3 - Cria um loop que percorre o array;
+4 - Cria uma estrutura condicional que vai verificar se o valor do resto da divisao de cada elemento do array por 2 é diferente de 0;
+5 - Caso positivo o número é ímpar e a variavel de quantidade de numeros ímpares é incrementada em 1;
+6 - Após terminado o loop cria outra estrutura condicional verificando se o numero de quantidade de números primos é igual a 0;
+7 - Caso positivo imprime "nenhum valor ímpar encontrado";
+8 - Caso negativo imprime o valor da variavel;
