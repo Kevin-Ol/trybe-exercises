@@ -1,0 +1,5 @@
+1 - Adiciona o array;
+2 - Cria uma variavel com valor 0;
+3 - Cria um loop que percorre o array;
+4 - Para cada valor no array, adiciona esse valor na variável;
+5 - Imprime a variavel;
