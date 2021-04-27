@@ -24,3 +24,15 @@ function maiorValor (array) {
 };
 
 console.log(maiorValor([2, 3, 6, 7, 10, 1]))
+
+function menorValor (array) {
+    menor = 0
+    for (number in array) {
+        if (array[number] < array[menor]) {
+            menor = number
+        };
+    };
+    return menor
+};
+
+console.log(menorValor([2, 4, 6, 7, 10, 0, -3]))
