@@ -94,3 +94,22 @@ function somatorio (valor){
 };
 
 console.log(somatorio(5))
+
+
+
+
+function compara(word, ending) {
+    let status = false
+    for (let index = 1; index <= ending.length ; index +=1) {
+        if (word[word.length - index] === ending[ending.length - index]) {
+            status = true
+        } else {
+            status = false
+        }
+    }
+    return status
+}
+
+
+
+console.log(compara('trybe', 'be'))
