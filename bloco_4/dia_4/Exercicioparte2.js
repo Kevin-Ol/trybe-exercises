@@ -60,3 +60,37 @@ function maiorNome (array) {
 };
 
 console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
+
+
+
+
+
+function repete (array) {
+    for (let number in array) {
+        let contador = 0;
+        for (let number2 in array){
+            if (array[number] === array[number2]) {
+                contador += 1
+            }
+        }
+    }
+    return contador;
+}
+
+console.log(repete([2, 3, 2, 5, 8, 2, 3]))
+
+
+
+
+
+
+
+function somatorio (valor){
+    soma = 0;
+    for (let index = 1; index <= valor ; index += 1){
+        soma += index
+    };
+    return soma;
+};
+
+console.log(somatorio(5))
