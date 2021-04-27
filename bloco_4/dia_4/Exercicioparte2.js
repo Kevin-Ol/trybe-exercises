@@ -13,6 +13,12 @@ function palindromo (palavra) {
 
 console.log(palindromo('desenvolvimento'))
 
+
+
+
+
+
+
 function maiorValor (array) {
     maior = 0
     for (number in array) {
@@ -25,6 +31,10 @@ function maiorValor (array) {
 
 console.log(maiorValor([2, 3, 6, 7, 10, 1]))
 
+
+
+
+
 function menorValor (array) {
     menor = 0
     for (number in array) {
@@ -36,3 +46,17 @@ function menorValor (array) {
 };
 
 console.log(menorValor([2, 4, 6, 7, 10, 0, -3]))
+
+
+
+function maiorNome (array) {
+    maior = 0;
+    for (let nome in array){
+        if (array[nome].length > array[maior].length) {
+            maior = nome
+        };
+    };
+    return array[maior];
+};
+
+console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
