@@ -123,12 +123,10 @@ function compara(word, ending) {
     for (let index = 1; index <= ending.length ; index +=1) {
         if (word[word.length - index] === ending[ending.length - index]) {
             status = true
-        } else {
-            status = false
-        }
-    }
+        };
+    };
     return status
-}
+};
 
 
 
