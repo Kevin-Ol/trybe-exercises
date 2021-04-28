@@ -66,18 +66,38 @@ console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']
 
 
 function repete (array) {
+    let repeticoes = 0;
+    let valor = 0;
     for (let number in array) {
         let contador = 0;
         for (let number2 in array){
             if (array[number] === array[number2]) {
                 contador += 1
             }
-        }
-    }
-    return contador;
-}
+            if (contador > repeticoes) {
+                repeticoes = contador;
+                valor = array[number]
+            };
+        };
+    };
+    return valor;
+};
 
-console.log(repete([2, 3, 2, 5, 8, 2, 3]))
+
+console.log(repete([2, 3, 2, 5, 8, 2, 3]));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
