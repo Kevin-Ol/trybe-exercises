@@ -22,3 +22,19 @@ function conversor(string) {
 };
 
 console.log(conversor('MMMCMLXIV'));
+
+
+
+function number (num1, num2) {
+    let primeiro = num1.toString();
+    let segundo = num2.toString();
+    let resultado = ''
+    for (let index = 1; index <= primeiro.length && segundo.length; index += 1){
+        let soma = Number(primeiro[primeiro.length - index]) + Number(segundo[segundo.length - index])
+        console.log(soma)
+        resultado = soma + resultado
+    }
+    return resultado
+}
+
+console.log(number('122', '81'))
