@@ -20,4 +20,19 @@
       console.log(document.getElementById('elementoOndeVoceEsta').nextSibling)
       console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling)
       console.log(document.getElementById('pai').lastElementChild.previousElementSibling)
+      
+      let irmao = document.createElement('h1');
+      irmao.innerText = 'Crie um irmão para elementoOndeVoceEsta';
+      document.getElementById('elementoOndeVoceEsta').parentNode.appendChild(irmao);
+
+      let filho1 = document.createElement('h2');
+      filho1.innerText = 'Crie um filho para elementoOndeVoceEsta .';
+      document.getElementById('elementoOndeVoceEsta').appendChild(filho1);
+
+      let filho2 = document.createElement('h3');
+      filho2.innerText = 'Crie um filho para primeiroFilhoDoFilho .';
+      document.getElementById('elementoOndeVoceEsta').firstElementChild.appendChild(filho2);
+
+      console.log(document.getElementsByTagName('h3')[0].parentNode.parentNode.nextElementSibling)
+
   </script>
