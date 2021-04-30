@@ -138,10 +138,23 @@
       subtitle2.innerHTML = 'CSS';
       document.querySelector('.main-content').appendChild(subtitle2);
 
-      let subtitle3 = document.createElement('h3');
-      subtitle3.innerHTML = 'JavaScript';
-      document.querySelector('.main-content').appendChild(subtitle3);
-    
+    let subtitle3 = document.createElement('h3');
+    subtitle3.innerHTML = 'JavaScript';
+    document.querySelector('.main-content').appendChild(subtitle3);
+
+    //   ------------------------------Segunda Parte ----------------------------------------
+
+    h1.className = 'title';
+    subtitle1.className = 'description';
+    subtitle2.className = 'description';
+    subtitle3.className = 'description';
+    document.querySelector('.main-content').removeChild(left);
+    document.querySelector('.right-content').style.marginRight = 'auto'
+    document.querySelector('.center-content').parentNode.style.backgroundColor = 'green'
+    document.querySelector('ul').removeChild(ten);
+    document.querySelector('ul').lastElementChild.remove()
+
+        
     </script>
   </body>
 </html>
