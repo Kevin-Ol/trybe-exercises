@@ -68,7 +68,7 @@
 
       let center = document.createElement('div');
       center.className = 'center-content';
-      document.body.appendChild(center);
+      document.querySelector('.main-content').appendChild(center);
 
       let p = document.createElement('p');
       p.innerHTML = 'Adicione a tag p como filho do div criado no passo 3 e coloque algum texto';
@@ -82,6 +82,65 @@
       right.className = 'right-content';
       document.querySelector('.main-content').appendChild(right);
 
+      let image = document.createElement('img');
+      image.src = 'https://picsum.photos/200';
+      image.className = 'small-image';
+      document.querySelector('.left-content').appendChild(image);
+
+      let numbers = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(numbers);
+
+      let one = document.createElement('li');
+      one.innerHTML = 'Um';
+      document.querySelector('ul').appendChild(one);
+
+      let two = document.createElement('li');
+      two.innerHTML = 'Dois';
+      document.querySelector('ul').appendChild(two);
+
+      let three = document.createElement('li');
+      three.innerHTML = 'Três';
+      document.querySelector('ul').appendChild(three);
+
+      let four = document.createElement('li');
+      four.innerHTML = 'Quatro';
+      document.querySelector('ul').appendChild(four);
+
+      let five = document.createElement('li');
+      five.innerHTML = 'Cinco';
+      document.querySelector('ul').appendChild(five);
+
+      let six = document.createElement('li');
+      six.innerHTML = 'Seis';
+      document.querySelector('ul').appendChild(six);
+
+      let seven = document.createElement('li');
+      seven.innerHTML = 'Sete';
+      document.querySelector('ul').appendChild(seven);
+
+      let eight = document.createElement('li');
+      eight.innerHTML = 'Oito';
+      document.querySelector('ul').appendChild(eight);
+
+      let nine = document.createElement('li');
+      nine.innerHTML = 'Nove';
+      document.querySelector('ul').appendChild(nine);
+
+      let ten = document.createElement('li');
+      ten.innerHTML = 'Dez';
+      document.querySelector('ul').appendChild(ten);
+
+      let subtitle1 = document.createElement('h3');
+      subtitle1.innerHTML = 'HTML';
+      document.querySelector('.main-content').appendChild(subtitle1);
+
+      let subtitle2 = document.createElement('h3');
+      subtitle2.innerHTML = 'CSS';
+      document.querySelector('.main-content').appendChild(subtitle2);
+
+      let subtitle3 = document.createElement('h3');
+      subtitle3.innerHTML = 'JavaScript';
+      document.querySelector('.main-content').appendChild(subtitle3);
     
     </script>
   </body>
