@@ -30,3 +30,9 @@ divUm.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro do addEventListener. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'divUm'.
+
+input.addEventListener('keyup', changeText);
+
+function changeText () {
+    document.getElementsByClassName('tech')[0].innerHTML = input.value
+}
