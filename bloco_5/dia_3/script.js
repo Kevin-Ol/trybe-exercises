@@ -66,3 +66,15 @@ function fridayButton() {
 }
 
 fridayButton();
+
+document.querySelector('#btn-friday').addEventListener ('click', function () {
+    let fridays = document.getElementsByClassName('friday');
+    let numbers = [4, 11, 18, 25];
+    for (let day in fridays) {
+        if (parseInt(fridays[day].innerHTML) === numbers[day]) {
+            fridays[day].innerHTML = 'Sexta-feira';
+        } else {
+            fridays[day].innerHTML = numbers[day];
+        }
+    };
+});
