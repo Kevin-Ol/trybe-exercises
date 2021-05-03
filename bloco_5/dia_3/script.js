@@ -46,3 +46,14 @@ function holidayButton() {
 
 holidayButton();
 
+document.querySelector('#btn-holiday').addEventListener ('click', function () {
+    let holidays = document.getElementsByClassName('holiday');
+    for (let day in holidays) {
+        if (holidays[day].style.backgroundColor === 'red') {
+            holidays[day].style.backgroundColor = 'rgb(238,238,238)';
+        } else {
+            holidays[day].style.backgroundColor = 'red'
+        }
+    };
+});
+
