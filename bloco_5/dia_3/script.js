@@ -46,6 +46,7 @@ function holidayButton() {
 
 holidayButton();
 
+
 document.querySelector('#btn-holiday').addEventListener ('click', function () {
     let holidays = document.getElementsByClassName('holiday');
     for (let day in holidays) {
@@ -57,3 +58,11 @@ document.querySelector('#btn-holiday').addEventListener ('click', function () {
     };
 });
 
+function fridayButton() {
+    button2 = document.createElement('button');
+    button2.id = 'btn-friday';
+    button2.innerHTML = 'Sexta-feira'
+    document.querySelector('.buttons-container').appendChild(button2);
+}
+
+fridayButton();
