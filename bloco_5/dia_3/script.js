@@ -85,25 +85,25 @@ document.querySelector('#btn-friday').addEventListener ('click', function () {
 
 // Exercício 06
 
-// function zoomIn () {
-//     let monthDaysItems = document.getElementsByClassName('day')
-// for (let day in monthDaysItems) {
-//     monthDaysItems[day].addEventListener('mouseover', function (event) {
-//         event.target.style.fontSize = '50px'
-//     }) 
-// }
-//     }
-// zoomIn ()
+function zoomIn () {
+    let monthDaysItems = document.getElementsByClassName('day')
+for (let day = 0; day <  monthDaysItems.length; day += 1) {
+    monthDaysItems[day].addEventListener('mouseover', function (event) {
+        event.target.style.fontSize = '50px'
+    }) 
+}
+    }
+zoomIn ()
 
-// function zoomOut () {
-//     let monthDaysItems = document.getElementsByClassName('day')
-// for (let day in monthDaysItems) {
-//     monthDaysItems[day].addEventListener('mouseleave', function (event2) {
-//         event2.target.style.fontSize = '10px'
-//     }) 
-// }
-//     }
-// zoomOut ()
+function zoomOut () {
+    let monthDaysItems = document.getElementsByClassName('day')
+for (let day = 0; day <  monthDaysItems.length; day += 1) {
+    monthDaysItems[day].addEventListener('mouseleave', function (event) {
+        event.target.style.fontSize = '16px'
+    }) 
+}
+    }
+zoomOut ()
 
 
 //GABARITO
@@ -121,27 +121,28 @@ document.querySelector('#btn-friday').addEventListener ('click', function () {
 function tasks (name) {
     let task = document.createElement('span')
     document.querySelector('.my-tasks').appendChild(task);
-    task.innerHTML = name 
+    task.innerHTML = name;
 }
 
 tasks ('Cozinhar')
 
-// Exercício 08
+// // Exercício 08
 function taskColor (color) {
     let element = document.createElement('div');
     document.querySelector('.my-tasks').appendChild(element);
-    element.className = 'task'
-    element.style.backgroundColor = color 
+    element.className = 'task';
+    element.style.backgroundColor = color ;
 }
 
 taskColor ('green')
 
-// Exercício 09
+// // Exercício 09
 let selectColor = document.querySelector('.my-tasks').lastElementChild
 selectColor.addEventListener('click', function (event) {
     if (event.target.className === 'task') {
-        event.target.className = 'task selected'
-    } else {
-        event.target.className = 'task'
+        event.target.className = 'task selected';
+    }
+    if (event.target.className === 'task selected') {
+        event.target.className = 'task';
     }
 })
