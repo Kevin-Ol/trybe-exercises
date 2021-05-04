@@ -1,0 +1,13 @@
+body article h1 {
+    text-align: center;
+};
+
+body article p {
+    text-align: justify;
+    color: green;
+}
+
+.paragrafo {
+    text-align: justify;
+    color: green;
+}
