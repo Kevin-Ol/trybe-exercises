@@ -14,6 +14,7 @@ function createDaysOfTheWeek() {
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
+  // Exercício 01
 function createDaysOfTheMonth() {
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     let monthDays = document.querySelector('#days');
@@ -37,6 +38,7 @@ function createDaysOfTheMonth() {
 
 createDaysOfTheMonth();
 
+// Exercício 02
 function holidayButton() {
     button = document.createElement('button');
     button.id = 'btn-holiday';
@@ -46,7 +48,7 @@ function holidayButton() {
 
 holidayButton();
 
-
+// Exercício 03
 document.querySelector('#btn-holiday').addEventListener ('click', function () {
     let holidays = document.getElementsByClassName('holiday');
     for (let day in holidays) {
@@ -58,6 +60,7 @@ document.querySelector('#btn-holiday').addEventListener ('click', function () {
     };
 });
 
+// Exercício 04
 function fridayButton() {
     button2 = document.createElement('button');
     button2.id = 'btn-friday';
@@ -67,6 +70,7 @@ function fridayButton() {
 
 fridayButton();
 
+// Exercício 05
 document.querySelector('#btn-friday').addEventListener ('click', function () {
     let fridays = document.getElementsByClassName('friday');
     let numbers = [4, 11, 18, 25];
@@ -78,3 +82,37 @@ document.querySelector('#btn-friday').addEventListener ('click', function () {
         }
     };
 });
+
+// Exercício 06
+
+function zoomIn () {
+    let monthDaysItems = document.getElementsByClassName('day')
+for (let day in monthDaysItems) {
+    monthDaysItems[day].addEventListener('mouseover', function (event) {
+        event.target.style.fontSize = '50px'
+    }) 
+}
+    }
+zoomIn ()
+
+function zoomOut () {
+    let monthDaysItems = document.getElementsByClassName('day')
+for (let day in monthDaysItems) {
+    monthDaysItems[day].addEventListener('mouseleave', function (event2) {
+        event2.target.style.fontSize = '10px'
+    }) 
+}
+    }
+zoomOut ()
+
+
+//GABARITO
+// function zoomIn() {
+//     let monthDays = document.querySelector('#days');
+
+//     monthDays.addEventListener('mouseover', function (event) {
+//         event.target.style.fontSize = '50px'
+//     })
+// }
+
+// zoomIn()
