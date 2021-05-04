@@ -130,7 +130,18 @@ tasks ('Cozinhar')
 function taskColor (color) {
     let element = document.createElement('div');
     document.querySelector('.my-tasks').appendChild(element);
+    element.className = 'task'
     element.style.backgroundColor = color 
 }
 
 taskColor ('green')
+
+// Exercício 09
+let selectColor = document.querySelector('.my-tasks').lastElementChild
+selectColor.addEventListener('click', function (event) {
+    if (event.target.className === 'task') {
+        event.target.className = 'task selected'
+    } else {
+        event.target.className = 'task'
+    }
+})
