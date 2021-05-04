@@ -13,6 +13,20 @@ for (let color = 0; color < colors.length ; color +=1) {
     circle.style.verticalAlign = 'middle';
     circle.style.marginLeft = '10px';
     document.querySelector('.backgroundColor').appendChild(circle);
+    circle.addEventListener('click', function () {
+        let change = circle.style.backgroundColor
+        document.body.style.backgroundColor = change
+    })
+    circle.addEventListener('mouseenter', function (event) {
+        event.target.style.height = '45px';
+        event.target.style.width = '45px';
+    })
+    circle.addEventListener('mouseleave', function (event) {
+        event.target.style.height = '30px';
+        event.target.style.width = '30px';
+    })
+
 }
+
 
 
