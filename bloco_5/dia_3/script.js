@@ -85,25 +85,25 @@ document.querySelector('#btn-friday').addEventListener ('click', function () {
 
 // Exercício 06
 
-function zoomIn () {
-    let monthDaysItems = document.getElementsByClassName('day')
-for (let day in monthDaysItems) {
-    monthDaysItems[day].addEventListener('mouseover', function (event) {
-        event.target.style.fontSize = '50px'
-    }) 
-}
-    }
-zoomIn ()
+// function zoomIn () {
+//     let monthDaysItems = document.getElementsByClassName('day')
+// for (let day in monthDaysItems) {
+//     monthDaysItems[day].addEventListener('mouseover', function (event) {
+//         event.target.style.fontSize = '50px'
+//     }) 
+// }
+//     }
+// zoomIn ()
 
-function zoomOut () {
-    let monthDaysItems = document.getElementsByClassName('day')
-for (let day in monthDaysItems) {
-    monthDaysItems[day].addEventListener('mouseleave', function (event2) {
-        event2.target.style.fontSize = '10px'
-    }) 
-}
-    }
-zoomOut ()
+// function zoomOut () {
+//     let monthDaysItems = document.getElementsByClassName('day')
+// for (let day in monthDaysItems) {
+//     monthDaysItems[day].addEventListener('mouseleave', function (event2) {
+//         event2.target.style.fontSize = '10px'
+//     }) 
+// }
+//     }
+// zoomOut ()
 
 
 //GABARITO
@@ -116,3 +116,21 @@ zoomOut ()
 // }
 
 // zoomIn()
+
+// Exercício 07
+function tasks (name) {
+    let task = document.createElement('span')
+    document.querySelector('.my-tasks').appendChild(task);
+    task.innerHTML = name 
+}
+
+tasks ('Cozinhar')
+
+// Exercício 08
+function taskColor (color) {
+    let element = document.createElement('div');
+    document.querySelector('.my-tasks').appendChild(element);
+    element.style.backgroundColor = color 
+}
+
+taskColor ('green')
