@@ -56,13 +56,22 @@ for (let size = 0; size < sizes.length; size +=1) {
     let button = document.createElement('button');
     button.innerHTML = sizes[size];
     button.style.fontSize = parseInt(sizes[size]) + 'px';
-    button.style.backgroundColor = document.body.style.backgroundColor;
     document.querySelector('.fontSize').appendChild(button);
     button.addEventListener('click', function () {
         document.body.style.fontSize = sizes[size];
     })
 }
 
+let heights = [1.0, 1.5, 2];
+
+for (let height = 0; height < heights.length; height +=1) {
+    let button = document.createElement('button');
+    button.innerHTML = heights[height];
+    document.querySelector('.lineHeight').appendChild(button);
+    button.addEventListener('click', function () {
+        document.body.style.lineHeight = heights[height];
+    })
+}
 
 
 
