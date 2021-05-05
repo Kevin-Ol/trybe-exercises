@@ -10,3 +10,7 @@ body article h1 {
 body article p {
     text-align: justify;
 }
+
+button {
+    font-size: 16px;
+}

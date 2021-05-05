@@ -50,4 +50,19 @@ for (let color = 0; color < colors.length ; color +=1) {
     })
 }
 
+let sizes = ['16px', '18px', '20px', '22px', '24px'];
+
+for (let size = 0; size < sizes.length; size +=1) {
+    let button = document.createElement('button');
+    button.innerHTML = sizes[size];
+    button.style.fontSize = parseInt(sizes[size]) + 'px';
+    button.style.backgroundColor = document.body.style.backgroundColor;
+    document.querySelector('.fontSize').appendChild(button);
+    button.addEventListener('click', function () {
+        document.body.style.fontSize = sizes[size];
+    })
+}
+
+
+
 
