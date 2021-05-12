@@ -76,58 +76,58 @@ document.querySelector('#cpf').addEventListener('keypress', function (event) {
 
 document.querySelector('#adress').addEventListener('keypress', function (event) {
     if (event.target.value.length === 200) { 
-        event.preventDefault()
-        alert('Limite de 200 caracteres')
+        event.preventDefault();
+        alert('Limite de 200 caracteres');
     }
 })
 
 document.querySelector('#city').addEventListener('keypress', function (event) {
     if (event.target.value.length === 28) { 
-        event.preventDefault()
-        alert('Limite de 28 caracteres')
+        event.preventDefault();
+        alert('Limite de 28 caracteres');
     }
 })
 
 document.querySelector('#abstract').addEventListener('keypress', function (event) {
     if (event.target.value.length === 1000) { 
-        event.preventDefault()
-        alert('Limite de 1000 caracteres')
+        event.preventDefault();
+        alert('Limite de 1000 caracteres');
     }
 })
 
 document.querySelector('#job').addEventListener('keypress', function (event) {
     if (event.target.value.length === 40) { 
-        event.preventDefault()
-        alert('Limite de 40 caracteres')
+        event.preventDefault();
+        alert('Limite de 40 caracteres');
     }
 })
 
 document.querySelector('#description').addEventListener('keypress', function (event) {
     if (event.target.value.length === 500) { 
-        event.preventDefault()
-        alert('Limite de 500 caracteres')
+        event.preventDefault();
+        alert('Limite de 500 caracteres');
     }
 })
 
 document.querySelector('#date').addEventListener('keypress', function vdata (event) {
         data = event.target.value
     if (data.length === 10) {
-        event.preventDefault()
-        alert('Data inválida')
+        event.preventDefault();
+        alert('Data inválida');
     } else if (parseInt(data[0] + data[1]) < 0 || parseInt(data[0] + data[1]) > 31) {
-        event.preventDefault()
-        alert('Dia inválido')
+        event.preventDefault();
+        alert('Dia inválido');
     } else if (parseInt(data[3] + data[4]) < 0 || parseInt(data[3] + data[4]) > 12) {
-        event.preventDefault()
-        alert('Mês inválido')
+        event.preventDefault();
+        alert('Mês inválido');
     } else if (parseInt(data[6] + data[7] + data[8] + data[9]) < 0) {
-        event.preventDefault()
-        alert('Ano inválido')
+        event.preventDefault();
+        alert('Ano inválido');
     } else if (data.length > 2 && data[2] !== '/') { 
-        event.preventDefault()
-        alert('Esperado separador "/"')      
+        event.preventDefault();
+        alert('Esperado separador "/"');      
     } else if (data.length > 5 && data[5] !== '/') { 
-        event.preventDefault()
-        alert('Esperado separador "/"')   
+        event.preventDefault();
+        alert('Esperado separador "/"');   
     }
 })
