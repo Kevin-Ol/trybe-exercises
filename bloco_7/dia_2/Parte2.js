@@ -60,15 +60,42 @@ const lesson1 = {
 
   const verifyPair = (object, key, value) => {
       let keys = Object.keys(object);
-      if (keys.includes(key)) {
-          if (object[key] === value) {
+      if (keys.includes(key) && object[key] === value) {
               return true
           } else {
               return false
-          }
-      } else {
-          return false
       }
   }
 
   console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+  const mathStudents = (object) => {
+    let total = 0;
+    for (key in object) {
+        if (object[key]['materia'] === 'Matemática')
+        total += object[key]['numeroEstudantes']
+    }
+    return total
+}
+console.log(mathStudents(allLessons))
+
+
+// console.log(allLessons['lesson1']['professor'])
+const createReport = (object, teacher) => {
+    let lessons = Object.keys(object);
+    let subject = []
+    let total = 0
+    for (let lesson = 0; lesson < lessons.length; lesson += 1) {
+        if (object[lessons[lesson]]['professor'] === teacher) {
+            subject.push(object[lessons[lesson]]['materia']);
+            total += object[lessons[lesson]]['numeroEstudantes']
+        }
+    }
+    const report = {}
+    report['professor'] = teacher;
+    report['aulas'] = subject;
+    report['estudantes'] = total;
+    return report
+}
+
+console.log(createReport(allLessons, 'Maria Clara'))
