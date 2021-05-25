@@ -16,4 +16,21 @@ const newEmployees = (callback) => {
   return employees;
 };
 
-console.log(newEmployees(emailGenerator))
+// console.log(newEmployees(emailGenerator))
+////////////////////////////Exercício 2////////////////////////////////////////////////////
+const checkNumber = (number, callback) => {
+    let random = Math.ceil((Math.random()*5));
+    console.log(random)
+    callback(number, random)
+}
+
+const printResults = (num1, num2) => {
+    if (num1 === num2) {
+        console.log('Parabéns você ganhou');
+    } else {
+        console.log('Tente novamente');
+    }
+}
+
+// checkNumber(3, printResults)
+////////////////////////////Exercício 3////////////////////////////////////////////////////
