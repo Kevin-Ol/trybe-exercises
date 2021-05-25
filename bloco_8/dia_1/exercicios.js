@@ -34,3 +34,26 @@ const printResults = (num1, num2) => {
 
 // checkNumber(3, printResults)
 ////////////////////////////Exercício 3////////////////////////////////////////////////////
+
+const score = (correct, student, callback) => {
+    console.log(`Pontuação final: ${callback(correct, student)} pontos`);
+}
+
+const checkAnswers = (array1, array2) => {
+    let sum = 0;
+    for (let index = 0; index < array1.length; index += 1) {
+        if (array2[index] === 'N.A') {
+            sum += 0
+        } else if (array1[index] === array2[index]) {
+            sum += 1;
+        } else {
+            sum -= 0.5;
+        }
+    }
+    return sum
+}
+
+const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const studentAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+score(rightAnswers, studentAnswers, checkAnswers)
