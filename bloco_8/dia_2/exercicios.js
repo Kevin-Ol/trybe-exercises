@@ -180,24 +180,11 @@ const expectedResult7 = false;
 
 function authorUnique() {
   // escreva seu código aqui
-  return books.some((book, index) => book.author.birthYear )
+  let array = []
+  books.forEach((element) => {
+    array.push(books.some((element1) => element.author.birthYear === element1.author.birthYear && element.author.name !== element1.author.name))
+ })
+ return result = !array.find(element => element === true)
 }
 
-// assert.strictEqual(authorUnique(), expectedResult7);
-
-let arr = ["abc","xy","bb", "abc"];
-const result = arr.forEach((element1) => {
-    let sum = 0;
-    arr.forEach((element2) => {
-        if (element1 === element2) {
-            sum += 1;
-        }
-    
-    })
-    if (sum > 1) {
-        return true
-    } else {
-        return false
-    }
-})
-console.log(result)
+assert.strictEqual(authorUnique(), expectedResult7);
