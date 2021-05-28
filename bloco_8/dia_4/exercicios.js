@@ -109,5 +109,60 @@ function averageAge() {
 
 assert.strictEqual(averageAge(), expectedResult3);
 
+function longestNamedBook() {
+  // escreva seu código aqui
+  const booksNames = books.map((book) => book.name)
+  const longestName = booksNames.reduce((acc, current)=> {
+    if (current.length > acc.length) {
+      return current
+    }
+    return acc
+  })
+  return longestName
+}
+// console.log(longestNamedBook())
+// assert.deepStrictEqual(longestNamedBook(), expectedResult);
 
+// const assert = require('assert');
 
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+function containsA() {
+  // escreva seu código aqui
+  const letterSepareted = names.map((name) => name.split(''))
+  const arrayOfLetters = letterSepareted.reduce((acc, current) => {
+    current.forEach((element) => acc.push(element));
+    return acc;
+  }, []);
+  const totalLetters = arrayOfLetters.reduce((acc, current) => (current === 'a' || current === 'A') ? acc += 1 : acc, 0);
+  return totalLetters;
+}
+
+assert.deepStrictEqual(containsA(), 20);
+
+// const assert = require('assert');
+
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+
+function studentAverage() {
+  // escreva seu código aqui
+  const studentsAndGrades = students.map((student, index) => {
+    return {name: student,
+            average: (grades[index].reduce((acc, current) => acc + current)) / grades[index].length
+    }
+  })
+  return studentsAndGrades
+}
+
+const expected = [
+  { name: 'Pedro Henrique', average: 7.8 },
+  { name: 'Miguel', average: 9.2 },
+  { name: 'Maria Clara', average: 8.8 },
+];
+
+assert.deepStrictEqual(studentAverage(), expected);
