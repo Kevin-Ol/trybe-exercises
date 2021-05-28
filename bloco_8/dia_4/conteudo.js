@@ -1,7 +1,7 @@
 const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
 
-const sumOdd = numbers.reduce((odd, number) => ((number % 2 === 0) ? (odd + number) : odd))
-console.log(sumOdd)
+const sumEven = numbers.reduce((sum, number) => ((number % 2 === 0) ? (sum + number) : sum))
+console.log(sumEven)
 
 const estudantes = [
     {
@@ -77,11 +77,6 @@ const estudantes = [
       ],
     },
   ];
-
-  const teste = estudantes[0].materias
-  const materia = teste.reduce((materia, nota) => ((nota.nota > materia.nota) ? nota : materia))
-//   console.log(teste)
-//   console.log(materia)
 
   const betterGrade = estudantes.map((student) => {
     const betterGrade = student.materias.reduce((materia, nota) => ((nota.nota > materia.nota) ? nota : materia))  
