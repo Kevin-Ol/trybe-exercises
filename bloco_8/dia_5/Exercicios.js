@@ -78,7 +78,7 @@ const people = [
 const filterPeople = (people) => {
     const people20thCentury = people.filter((person) => {
         const {name, bornIn, nationality} = person;
-        if (bornIn > 1900 && bornIn < 2001) {
+        if (bornIn > 1900 && bornIn < 2001 && nationality === 'Australian') {
             return ({name, bornIn, nationality})
         }
         
@@ -102,3 +102,16 @@ const swappedList = swap(myList);
 assert.strictEqual(swappedList[0], 3);
 assert.strictEqual(swappedList[1], 2);
 assert.strictEqual(swappedList[2], 1);
+
+// const assert = require('assert');
+
+const palio = ['Palio', 'Fiat', 2019];
+const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
+const chiron = ['Chiron', 'Bugatti', 2016];
+
+// escreva toObject abaixo
+const toObject = ([name, brand, year]) => ({name, brand, year})
+
+assert.deepStrictEqual(toObject(palio), { name: 'Palio', brand: 'Fiat', year: 2019 });
+assert.deepStrictEqual(toObject(shelbyCobra), { name: 'Shelby Cobra', brand: 'Ford', year: 1963 });
+assert.deepStrictEqual(toObject(chiron), { name: 'Chiron', brand: 'Bugatti', year: 2016 });
