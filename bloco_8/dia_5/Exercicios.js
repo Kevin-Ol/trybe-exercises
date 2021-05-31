@@ -43,3 +43,62 @@ const personLikes = ({name, age, likes}) => `${name} is ${age} years old and lik
 
 assert.strictEqual(personLikes(alex), 'Alex is 26 years old and likes fly fishing.');
 assert.strictEqual(personLikes(gunnar), 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.');
+
+// const assert = require('assert');
+
+const people = [
+  {
+    name: 'Nicole',
+    bornIn: 1992,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Harry',
+    bornIn: 2008,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Toby',
+    bornIn: 1901,
+    nationality: 'Australian',
+  },
+  {
+    name: 'Frida',
+    bornIn: 1960,
+    nationality: 'Dannish',
+  },
+  {
+    name: 'Fernando',
+    bornIn: 2001,
+    nationality: 'Brazilian',
+  },
+];
+
+// escreva filterPeople abaixo
+const filterPeople = (people) => {
+    const people20thCentury = people.filter((person) => {
+        const {name, bornIn, nationality} = person;
+        if (bornIn > 1900 && bornIn < 2001) {
+            return ({name, bornIn, nationality})
+        }
+        
+    })
+    return people20thCentury
+}
+const filteredPeople = filterPeople(people);
+
+assert.deepStrictEqual(filteredPeople[0], { name: 'Nicole', bornIn: 1992, nationality: 'Australian' });
+assert.deepStrictEqual(filteredPeople[1], { name: 'Toby', bornIn: 1901, nationality: 'Australian' });
+
+// const assert = require('assert');
+
+const myList = [1, 2, 3];
+
+// escreva swap abaixo
+const swap = ([first, second, third]) => [third, second, first];
+
+const swappedList = swap(myList);
+
+assert.strictEqual(swappedList[0], 3);
+assert.strictEqual(swappedList[1], 2);
+assert.strictEqual(swappedList[2], 1);
