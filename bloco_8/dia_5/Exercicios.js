@@ -115,3 +115,40 @@ const toObject = ([name, brand, year]) => ({name, brand, year})
 assert.deepStrictEqual(toObject(palio), { name: 'Palio', brand: 'Fiat', year: 2019 });
 assert.deepStrictEqual(toObject(shelbyCobra), { name: 'Shelby Cobra', brand: 'Ford', year: 1963 });
 assert.deepStrictEqual(toObject(chiron), { name: 'Chiron', brand: 'Bugatti', year: 2016 });
+
+// const assert = require('assert');
+
+const ships = [
+  {
+    name: 'Titanic',
+    length: 269.1,
+    measurementUnit: 'meters',
+  },
+  {
+    name: 'Queen Mary 2',
+    length: 1132,
+    measurementUnit: 'feet',
+  },
+  {
+    name: 'Yamato',
+    length: 256,
+    measurementUnit: 'meters',
+  },
+];
+
+// escreva shipLength abaixo
+const shipLength = ({name, length, measurementUnit}) => `${name} is ${length} ${measurementUnit} long`
+
+assert.strictEqual(shipLength(ships[0]), 'Titanic is 269.1 meters long');
+assert.strictEqual(shipLength(ships[1]), 'Queen Mary 2 is 1132 feet long');
+assert.strictEqual(shipLength(ships[2]), 'Yamato is 256 meters long');
+
+// const assert = require('assert');
+
+// escreva greet abaixo
+
+const greet = (name, greet = 'Hi') => `${greet} ${name}` 
+
+assert.strictEqual(greet('John'), 'Hi John');
+assert.strictEqual(greet('John', 'Good morning'), 'Good morning John');
+assert.strictEqual(greet('Isabela', 'Oi'), 'Oi Isabela');
