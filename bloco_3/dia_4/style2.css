@@ -1,0 +1,110 @@
+img {
+    max-width: 300px;
+}
+
+body{
+    margin: 0%;
+    background-color: bisque;
+}
+
+header {
+    position:fixed;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    background-color: red;
+    border: 1px solid black;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+header nav{
+    background-color: yellow;
+    margin-top: 0%;
+}
+
+header ul{
+    margin-top: 0%;
+}
+
+header li{
+    display: inline-block;
+    padding-right: 25%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 70%;
+    text-align: justify;
+    display: inline-block;
+}
+
+article h2 {
+    text-align: center;
+}
+
+section.claws {
+    clear: both;
+}
+
+section.references {
+    margin-left: 5%;
+    clear: both;
+}
+
+footer {
+    margin-right: 5%;
+    text-align: right;
+}
+
+div.legenda {
+    float: right;
+    margin-left: 2%;
+}
+
+div.legenda h3 {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+section.claws img {
+    float: left;
+    margin-right: 2%;
+}
+
+section.eyes img {
+    float:right;
+    margin-left: 2%;
+}
+
+section.behaviour img {
+    float:left;
+    margin-right: 2%;
+}
+
+table {
+    float: right;
+    text-align: center;
+    clear: both;
+    margin-right: 8%;
+    margin-left: 2%;
+}
+
+aside {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    position:fixed;
+}
