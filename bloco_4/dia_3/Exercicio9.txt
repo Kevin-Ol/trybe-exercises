@@ -1,0 +1,7 @@
+1 - Cria um array vazio;
+2 - Cria um loop que vai ser incrementado até o passo 25;
+3 - Para cada passo, adiciona o valor do passo ao array usando nomedoarray.push(indice);
+4 - Cria um segundo array vazio que vai receber o valor da divisao;
+5 - Cria um loop que vai percorrer o array gerado;
+6 - Para cada valor do array, adiciona o resultado da sua divisão por 2 ao array vazio criado no passo 4;
+7 - Imprime o array gerado no passo 4;

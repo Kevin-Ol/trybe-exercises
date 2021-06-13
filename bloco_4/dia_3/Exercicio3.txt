@@ -1,0 +1,7 @@
+1 - Adiciona o array;
+2 - Cria uma variavel com valor 0;
+3 - Cria um loop que percorre o array;
+4 - Para cada valor no array, adiciona esse valor na variável;
+5 - Cria uma nova variavel com valor 0;
+6 - A variável do passo 5 recebe a divisão do valor acumulado da variavel 2 pela quantidade de elementos do array;
+7 - Imprime variável 5;
