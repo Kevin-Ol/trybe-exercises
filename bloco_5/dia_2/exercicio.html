@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      let h1 = document.createElement('h1');
+      h1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(h1);
+
+      let main = document.createElement('div');
+      main.className = 'main-content';
+      document.body.appendChild(main);
+
+      let center = document.createElement('div');
+      center.className = 'center-content';
+      document.querySelector('.main-content').appendChild(center);
+
+      let p = document.createElement('p');
+      p.innerHTML = 'Adicione a tag p como filho do div criado no passo 3 e coloque algum texto';
+      document.querySelector('.center-content').appendChild(p);
+
+      let left = document.createElement('div');
+      left.className = 'left-content';
+      document.querySelector('.main-content').appendChild(left);
+
+      let right = document.createElement('div');
+      right.className = 'right-content';
+      document.querySelector('.main-content').appendChild(right);
+
+      let image = document.createElement('img');
+      image.src = 'https://picsum.photos/200';
+      image.className = 'small-image';
+      document.querySelector('.left-content').appendChild(image);
+
+      let numbers = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(numbers);
+
+      let one = document.createElement('li');
+      one.innerHTML = 'Um';
+      document.querySelector('ul').appendChild(one);
+
+      let two = document.createElement('li');
+      two.innerHTML = 'Dois';
+      document.querySelector('ul').appendChild(two);
+
+      let three = document.createElement('li');
+      three.innerHTML = 'Três';
+      document.querySelector('ul').appendChild(three);
+
+      let four = document.createElement('li');
+      four.innerHTML = 'Quatro';
+      document.querySelector('ul').appendChild(four);
+
+      let five = document.createElement('li');
+      five.innerHTML = 'Cinco';
+      document.querySelector('ul').appendChild(five);
+
+      let six = document.createElement('li');
+      six.innerHTML = 'Seis';
+      document.querySelector('ul').appendChild(six);
+
+      let seven = document.createElement('li');
+      seven.innerHTML = 'Sete';
+      document.querySelector('ul').appendChild(seven);
+
+      let eight = document.createElement('li');
+      eight.innerHTML = 'Oito';
+      document.querySelector('ul').appendChild(eight);
+
+      let nine = document.createElement('li');
+      nine.innerHTML = 'Nove';
+      document.querySelector('ul').appendChild(nine);
+
+      let ten = document.createElement('li');
+      ten.innerHTML = 'Dez';
+      document.querySelector('ul').appendChild(ten);
+
+      let subtitle1 = document.createElement('h3');
+      subtitle1.innerHTML = 'HTML';
+      document.querySelector('.main-content').appendChild(subtitle1);
+
+      let subtitle2 = document.createElement('h3');
+      subtitle2.innerHTML = 'CSS';
+      document.querySelector('.main-content').appendChild(subtitle2);
+
+    let subtitle3 = document.createElement('h3');
+    subtitle3.innerHTML = 'JavaScript';
+    document.querySelector('.main-content').appendChild(subtitle3);
+
+    //   ------------------------------Segunda Parte ----------------------------------------
+
+    h1.className = 'title';
+    subtitle1.className = 'description';
+    subtitle2.className = 'description';
+    subtitle3.className = 'description';
+    document.querySelector('.main-content').removeChild(left);
+    document.querySelector('.right-content').style.marginRight = 'auto'
+    document.querySelector('.center-content').parentNode.style.backgroundColor = 'green'
+    document.querySelector('ul').removeChild(ten);
+    document.querySelector('ul').lastElementChild.remove()
+
+        
+    </script>
+  </body>
+</html>
