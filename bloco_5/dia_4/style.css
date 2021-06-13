@@ -1,0 +1,16 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body article h1 {
+    text-align: center;
+}
+
+body article p {
+    text-align: justify;
+}
+
+button {
+    font-size: 16px;
+}
