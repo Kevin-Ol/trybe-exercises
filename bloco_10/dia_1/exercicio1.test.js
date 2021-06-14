@@ -1,4 +1,4 @@
-const { sum, myRemove, myRemoveWithoutCopy, myFizzBuzz, obj1, obj2, obj3 } = require("./exercicios");
+const { sum, myRemove, myRemoveWithoutCopy, myFizzBuzz, obj1, obj2, obj3 } = require("./exercicio1");
 const { describe, test, expect, toThrow, toThrowError } = require('@jest/globals')
 
 describe('Testa função sum', () => {
