@@ -38,7 +38,6 @@ class App extends Component {
 
   render() {
     const { name, email, cpf, adress, city, resume, job, description } = this.state
-    console.log(name.toUpperCase())
     return (
       <form className="App">
         <fieldset>
