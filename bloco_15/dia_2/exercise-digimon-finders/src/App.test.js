@@ -58,12 +58,15 @@ describe('Teste da aplicação toda', () => {
     const input = screen.getByRole('textbox');
     expect(input).toHaveValue('');
 
-    userEvent.type(input, 'pikachu');
-    expect(input).toHaveValue('pikachu');
-
     const url = 'https://digimon-api.vercel.app/api/digimon/name/pikachu';
 
     const button = screen.getByRole('button', 'Search Digimon');
+    userEvent.click(button);
+    expect(global.fetch).toHaveBeenCalledTimes(0);
+
+    userEvent.type(input, 'pikachu');
+    expect(input).toHaveValue('pikachu');
+
     userEvent.click(button);
     expect(global.fetch).toHaveBeenCalledTimes(1);
     expect(global.fetch).toHaveBeenCalledWith(url);
