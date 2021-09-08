@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+label {
+    display: flex;
+    gap: 8px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
