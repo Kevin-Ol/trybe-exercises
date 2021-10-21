@@ -8,6 +8,8 @@
     "imc": "node imc.js",
     "velocidade": "node velocidade.js",
     "sorteio": "node sorteio.js",
+    "fatorial": "node fatorial.js",
+    "fibonacci": "node fibonacci.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
