@@ -2,7 +2,7 @@ const readline = require('readline-sync');
 
 function fibonacci() {
   const numero = readline.questionInt('Digite um número inteiro maior que 0: ');
-  if (typeof numero !== 'number' || numero < 0 || !Number.isInteger(numero)) {
+  if (typeof numero !== 'number' || numero <= 0 || !Number.isInteger(numero)) {
     console.log(`${numero} é um caractere inválido! Insira um número inteiro maior que zero`);
     return;
   }
