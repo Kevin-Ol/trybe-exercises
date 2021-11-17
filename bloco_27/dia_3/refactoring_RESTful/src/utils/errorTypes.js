@@ -20,5 +20,9 @@ module.exports = {
   unregistredProduct: {
     code: StatusCodes.NOT_FOUND,
     message: "Product not registered",
+  },
+  invalidMongoId: {
+    code: StatusCodes.BAD_REQUEST,
+    message: 'Invalid Id',
   }
 }

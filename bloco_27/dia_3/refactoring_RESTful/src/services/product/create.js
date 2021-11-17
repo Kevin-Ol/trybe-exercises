@@ -1,4 +1,5 @@
-const ProductModel = require('../../models/productModel');
+// const ProductModel = require('../../models/productModel');
+const ProductModel = require('../../models/productModelMongo');
 
 module.exports = async (product) => {
   const { name, brand } = product;
