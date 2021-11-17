@@ -49,7 +49,7 @@ const update = async (id, name, brand) => {
 const exclude = async (id) => {
   try {
     const product = await getById(id);
-    if (!product) return {};
+    if (!product) return null;
     await connection.query('DELETE FROM products WHERE id = ?', [id])
     return product;
   } catch (err) {

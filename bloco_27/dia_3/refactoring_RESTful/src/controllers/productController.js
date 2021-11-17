@@ -15,26 +15,10 @@ router.get('/get-by-id/:id', async (req, res, next) => {
   res.send(product);
 });
 
-router.post('/add-user', async (req, res) => {
-  const { name, brand } = req.body;
+router.post('/add-user', );
 
-  const newProduct = await ProductModel.add(name, brand);
+router.post('/delete-user/:id', );
 
-  res.send(newProduct);
-});
-
-router.post('/delete-user/:id', async (req, res) => {
-  const products = await ProductModel.exclude(req.params.id);
-
-  res.send(products);
-});
-
-router.post('/update-user/:id', async (req, res) => {
-  const { name, brand } = req.body;
-
-  const products = await ProductModel.update(req.params.id, name, brand);
-
-  res.send(products);
-});
+router.post('/update-user/:id', );
 
 module.exports = router;
