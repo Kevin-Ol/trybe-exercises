@@ -24,8 +24,7 @@ describe('Busca todos os filmes', () => {
   after(() => {
     mongoConnection.getConnection.restore();
   })
-  
-  
+
   describe('Quando não existe nenhum filme criado', () => {
     it('retorna uma array', async () => {
       const movies = await MoviesModel.getAll();

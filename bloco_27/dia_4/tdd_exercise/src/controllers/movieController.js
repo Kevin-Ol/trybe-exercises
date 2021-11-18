@@ -22,7 +22,21 @@ const create = async (req, res) => {
     .json({ message: 'Filme criado com sucesso!' });
 };
 
+const getById = async (req, res) => {
+  const { id } = req.params;
+
+  const movie = await MovieService.getById(id);
+  
+  if(movie.error) {
+    const {code, message} = movie.error;
+    return res.status(code).json({message});
+  }
+
+  return res.status(200).json({movie});
+};
+
 module.exports = {
   getAll,
   create,
+  getById,
 };

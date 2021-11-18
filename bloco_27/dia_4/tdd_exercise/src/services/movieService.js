@@ -1,4 +1,5 @@
 const MoviesModel = require('../models/movieModel');
+const { ObjectId } = require('mongodb');
 
 const getNewMovie = (movieData) => {
   const { id, title, directedBy, releaseYear } = movieData;
@@ -34,7 +35,32 @@ const create = async ({ title, directedBy, releaseYear }) => {
   };
 };
 
+const getById = async (id) => {
+  if (!ObjectId.isValid(id)){
+    return {
+        error: {
+          code: 400,
+          message: 'Id inválido'
+        }
+      }
+  }
+
+  const movie = await MoviesModel.getById(id);
+
+  if (!movie) {
+    return {
+      error: {
+        code: 404,
+        message: 'Filme não encontrado'
+      }
+    }
+  };
+
+  return movie;
+}
+
 module.exports = {
   create,
   getAll,
+  getById,
 };
