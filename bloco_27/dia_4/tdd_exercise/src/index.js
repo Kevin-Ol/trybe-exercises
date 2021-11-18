@@ -11,6 +11,8 @@ app.get('/movies', MovieController.getAll);
 
 app.post('/movies', MovieController.create);
 
+app.post('/movies/:id', MovieController.getById);
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
