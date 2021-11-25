@@ -1,4 +1,12 @@
 module.exports = (req, res) => {
+  if (!req.user) {
+    return res.status(403).json({
+      "error": {
+        "message": "Restricted access"
+      }
+    });
+  }
+
   const { admin } = req.user;
 
   if(admin) {
