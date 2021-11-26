@@ -172,8 +172,9 @@ describe('GET /api/users/:userId', () => {
 
 			it('Retorna dados do usuário', () => {
 					const expectedUser = {
-						id: 'sdasd124147',
+						_id: 'sdasd124147',
 						username: 'jane',
+						password: 'senha123'
 					}
 					expect(response.body).to.be.deep.equal(expectedUser);
 			})
