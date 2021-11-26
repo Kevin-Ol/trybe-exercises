@@ -22,3 +22,33 @@
 
   Torne a pasta uploads pública de forma que seja possível baixar os arquivos enviados anteriormente.
   
+
+---------------------------------------------------BONUS------------------------------------------------
+
+1. Crie o endpoint POST /multiple
+  Permita o upload de vários arquivos através do campo files ;
+  Salve cada arquivo na pasta /uploads com um nome aleatório, que será gerado pelo multer ;
+  Retorne uma lista dos arquivos enviados juntamente com a URL pela qual cada um está acessível. Exemplo:
+  [
+    { "file": "meuArquivo.txt", "url": "http://localhost:3000/c3f20f8a1a72729883b88a96f405bbd0" },
+    { "file": "arquivo1.png", "url": "http://localhost:3000/7c76b101fd872f7fc12705eeba2ddd1c" },
+    { "file": "profile.jpg", "url": "http://localhost:3000/0ec57a65a9522aa14f9405060089c6f5" },
+    { "file": "tcc.docx", "url": "http://localhost:3000/a7de65196a12ce1c53e8e76927099f12" },
+    { "file": "CNH.jpg", "url": "http://localhost:3000/78c948b7b737d9a80b13f52bc6968d75" }
+  ]
+
+2.Crie o endpoint POST /profile
+  Receba strings nos campos name , email , password e bio ;
+  Receba um arquivo no campo profilePic ;
+  Armazene o arquivo recebido na pasta /profilePics com o nome aleatório do multer ;
+  Utilize o nome gerado pelo multer como ID para o perfil criado;
+  Armazene as informações do perfil no arquivo profiles.json
+
+Crie o endpoint GET /profiles/:id
+  Caso exista um perfil com o id informado, retorne as informações desse perfil, conforme salvo no arquivo profiles.json
+  Caso não exista um perfil com o id informado, retorne o status 404 Not Found com o seguinte corpo:
+  {
+    "error": {
+        "message": "Perfil não encontrado"
+    }
+  }

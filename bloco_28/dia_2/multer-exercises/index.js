@@ -21,10 +21,17 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, 'uploads')));
+app.use(express.static(path.resolve(__dirname, 'profilePics')));
 
 app.get('/ping', controllers.ping);
 
 app.post('/upload', middlewares.upload.single('file'), controllers.uploads);
+
+app.post('/multiple', middlewares.uploadMultiple.array('files'), controllers.multiple);
+
+app.post('/profile', middlewares.uploadProfile.single('profilePic'), controllers.profile);
+
+app.get('/profile/:id', controllers.getProfile);
 
 app.use(middlewares.error);
 
