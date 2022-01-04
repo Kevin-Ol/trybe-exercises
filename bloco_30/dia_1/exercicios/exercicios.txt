@@ -1,0 +1,11 @@
+Precisamos ter os endpoints:
+GET /plants : retorna todas as plantas;
+GET /plant/:id : retorna uma planta com o id;
+DELETE /plant/:id : deleta uma planta com o id;
+POST /plant/:id : sobrescreve a planta com id;
+POST /plant : cria uma planta nova;
+GET /sunny/:id : retorna uma planta que precisa de sol com o id.
+
+Bônus
+Crie um banco de dados para persistir os dados das plantas, ao invés de utilizar uma variável.
+Divida a aplicação em camadas.
