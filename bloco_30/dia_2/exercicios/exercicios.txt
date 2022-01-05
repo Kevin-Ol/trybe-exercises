@@ -1,0 +1,21 @@
+Como iniciar:
+
+1. Crie uma nova pasta e inicie um projeto com Express;
+2. Crie o arquivo index.js;
+3. Instale o pacote sequelize e o mysql2;
+4. Instale o pacote sequelize-cli como uma dependência de desenvolvimento;
+5. Use o Sequelize-CLI para iniciar a configuração do ORM;
+6. Agora, aproveitando a CLI, vamos criar nossa primeira migration para books usando: npx sequelize migration:generate --name create-books
+7. Dentro do up , crie uma tabela Books com os atributos: id (nossa chave primária), title (string e não pode ser nulo), author (string e não pode ser nulo), pageQuantity (integer e pode ser nulo) e createdAt (date e não pode ser nulo);
+8. Dentro do down , remova a tabela Books;
+9. Crie seu banco de dados e coloque todas as configurações dentro do arquivo config/config.js;
+10. Agora você pode rodar as migrations (seu banco precisa estar configurado certinho para isso funcionar);
+11. Crie um arquivo Book.js dentro da pasta models e crie seu modelo lá dentro, respeitando os atributos que definimos nas migrations;
+
+Exercício : Crie os controllers do seu projeto com as seguintes rotas:
+  GET /books - lista todos os livros;
+  GET /book/:id - pega o livro com o id especificado;
+  POST /book - cria um novo livro;
+  POST /book/:id - sobrescreve o livro com ID selecionado;
+  DELETE /book/:id - deleta um livro;
+  Em caso de erro, os endpoints devem retornar status code 500 com a mensagem: 'Algo deu errado'.
