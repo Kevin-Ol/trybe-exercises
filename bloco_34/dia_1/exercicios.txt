@@ -1,0 +1,27 @@
+Exercício 1: Em um contexto de orientação a objetos, como podemos definir o que são mensagens e qual a sua importância?
+  Mensagens são as informações ou mudanças requisitadas às classes, e são importantes para haver comunicação entre a classe e o objeto
+
+
+Exercício 2: Para exercitar nossa capacidade de abstração, vamos modelar algumas partes de um software de geometria. Como poderíamos modelar um objeto retângulo?
+  Nome: Retangulo
+  Atributos: lado maior e lado menor
+  Comportamentos: área, perímetro
+
+Exercício 3: E como poderíamos definir um círculo? Qual seu nome, atributos e comportamentos?
+  Nome: Círculo
+  Atributos: raio
+  Comportamentos: área, perímetro, diametro
+
+ Vamos mudar um pouco nosso contexto para um sistema de vendas de uma cafeteria. Como podemos abstrair um pedido composto por vários itens? Qual seu nome, atributos e comportamentos?
+  Nome: Pedido
+  Atributos: cliente, itens, pagamento
+  Comportamentos: calcular total, adicionar item, remover item, alterar forma de pagamento
+
+  Nome: Item
+  Atributos: nome, preço, quantidade
+  Comportamentos: alterar preço, alterar quantidade
+
+ Notou que os pilares da orientação a objetos começam a manifestar a medida que fizemos nossos exercícios de modelagem? Que tal agora então modelarmos uma televisão?
+  Nome: Televisao
+  Atributos: marca, tamanho, estado, volume, canal
+  Comportamentos: alterar volume, mudar canal, mudar estado (ligar/desligar)
