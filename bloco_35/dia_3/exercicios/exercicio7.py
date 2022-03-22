@@ -7,9 +7,8 @@ with MongoClient() as client:
     pipeline = [
         {"$match": {"status": "PUBLISH"}},
         {"$unwind": "$categories"},
-        {"$group": {"_id": "$categories", "total": {"$sum": 1}} },
-        {"$sort": {"total": -1}}
+        {"$group": {"_id": "$categories", "total": {"$sum": 1}}},
+        {"$sort": {"total": -1}},
     ]
     for category in db.books.aggregate(pipeline):
         print(category["_id"], category["total"])
-
